@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace SqlSugar_STU
 {
+    
     public class DbHelper
     {
         SqlSugarClient client = new SqlSugarClient(new ConnectionConfig()
@@ -24,6 +25,10 @@ namespace SqlSugar_STU
         public SqlSugarClient GetClient()
         {
             return client;
+        }
+        public void test()
+        {
+            Console.WriteLine("123");
         }
     }
 }
